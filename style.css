@@ -1,0 +1,336 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f9e0e6; /* Light pink background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff80ab; /* Pink shade for header */
+    padding: 20px 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    gap: 5px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #ff5c8d; /* Darker pink on hover */
+    border-radius: 5px;
+}
+
+/* Home Section Styles */
+/* Home Section Styles */
+.home {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffc1e3; /* Light pink */
+    padding: 0 20px;
+    margin-top: 80px;
+}
+
+/* Home Container for Left and Right Columns */
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Left Side: Intro Text */
+.home-left {
+    flex: 1;
+    padding-right: 20px; /* Add some padding to the right for spacing */
+}
+
+.home-left h1 {
+    font-size: 48px;
+    color: #fff; /* White text */
+    margin-bottom: 10px;
+}
+
+.home-left h1 span {
+    color: #ff4081; /* Bright pink for 'Raisa' */
+}
+
+.home-left h3 {
+    font-size: 24px;
+    color: #ff5c8d; /* Darker pink */
+}
+
+/* Right Side: Description Text */
+.home-right {
+    flex: 1;
+    padding-left: 20px; /* Add some padding to the left for spacing */
+}
+
+.home-right p {
+    font-size: 18px;
+    color: #fff; /* White text */
+    line-height: 1.6;
+}
+
+/* Responsive Design: Stack columns vertically on smaller screens */
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-left, .home-right {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .home-left h1 {
+        font-size: 36px;
+    }
+
+    .home-right p {
+        font-size: 16px;
+    }
+}
+
+
+/* Skills Section Styles */
+.skills {
+    background-color: #f9e0e6; /* Very light pink */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 32px;
+    color: #ff4081; /* Bright pink */
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.skill {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+.skill h3 {
+    font-size: 22px;
+    color: #ff4081;
+    margin-bottom: 10px;
+}
+
+.skill p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Projects Section Styles */
+.projects {
+    background-color: #ffc1e3; /* Light pink */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 32px;
+    color: #ff4081; /* Bright pink */
+    margin-bottom: 20px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.project {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.project h3 {
+    font-size: 22px;
+    color: #ff4081;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.project a {
+    text-decoration: none;
+    color: white;
+    background-color: #ff4081;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.project a:hover {
+    background-color: #ff5c8d; /* Darker pink */
+}
+
+/* Contact Section Styles */
+.contact {
+    background-color: #f9e0e6; /* Very light pink */
+    padding: 6px 2px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 32px;
+    color: #ff4081; /* Bright pink */
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form .form-group {
+    margin-bottom: 10px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form button {
+    display: inline-block;
+    background-color: #ff4081;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #ff5c8d; /* Darker pink */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ff4081; /* Bright pink */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .social-icon a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+footer .social-icon a:hover {
+    color: #ff80ab; /* Lighter pink on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 05px;
+    }
+
+    .home h1 {
+        font-size: 36px;
+    }
+
+    .home p {
+        font-size: 16px;
+    }
+
+    .skills-container, .projects-container {
+        flex-direction: column;
+    }
+}
